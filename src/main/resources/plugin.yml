@@ -1,0 +1,24 @@
+name: MbRPG
+version: 1.0
+author: Moulberry
+main: io.github.moulberry.rpg.MbRPG
+api-version: 1.8.8
+
+depend: [ProtocolLib]
+
+commands:
+  createemptyworld:
+    description: creates a template world
+    usage: /createworld {name}
+  gotoinstanceworld:
+    description: goes to a new instance of a template world
+    usage: /gotoinstanceworld {name}
+  gotodynamicworld:
+    description: goes to a dynamic world (creating one if necessary)
+    usage: /gotodynamicworld {name}
+  givecustomitem:
+    description: gives a custom item
+    usage: /givecustomitem {id}
+  menu:
+    description: opens the main menu for MbRPG
+    usage: /menu

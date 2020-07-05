@@ -1,0 +1,523 @@
+Symbol range map extraction starting
+Processing 8 files
+processing io.github.moulberry.rpg\EventListener.java
+@|io.github.moulberry.rpg\EventListener.java|8|31|io.github.moulberry.rpg|package|io.github.moulberry.rpg|(file)
+Class Start: io.github.moulberry.rpg.EventListener
+   Method Start: onWorldUnload(Lorg/bukkit/event/world/WorldUnloadEvent;)V
+      @|io.github.moulberry.rpg\EventListener.java|391|404|onWorldUnload|method|io.github.moulberry.rpg.EventListener|onWorldUnload|(Lorg/bukkit/event/world/WorldUnloadEvent;)V
+      @|io.github.moulberry.rpg\EventListener.java|405|421|WorldUnloadEvent|class|org.bukkit.event.world.WorldUnloadEvent
+      @|io.github.moulberry.rpg\EventListener.java|422|427|event|param|io.github.moulberry.rpg.EventListener|onWorldUnload|(Lorg/bukkit/event/world/WorldUnloadEvent;)V|event|0
+      @|io.github.moulberry.rpg\EventListener.java|491|500|Exception|class|java.lang.Exception
+      @|io.github.moulberry.rpg\EventListener.java|520|535|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+   Method End: onWorldUnload(Lorg/bukkit/event/world/WorldUnloadEvent;)V
+   Method Start: onPlayerChangeWorld(Lorg/bukkit/event/player/PlayerChangedWorldEvent;)V
+      @|io.github.moulberry.rpg\EventListener.java|590|609|onPlayerChangeWorld|method|io.github.moulberry.rpg.EventListener|onPlayerChangeWorld|(Lorg/bukkit/event/player/PlayerChangedWorldEvent;)V
+      @|io.github.moulberry.rpg\EventListener.java|610|633|PlayerChangedWorldEvent|class|org.bukkit.event.player.PlayerChangedWorldEvent
+      @|io.github.moulberry.rpg\EventListener.java|634|639|event|param|io.github.moulberry.rpg.EventListener|onPlayerChangeWorld|(Lorg/bukkit/event/player/PlayerChangedWorldEvent;)V|event|0
+      @|io.github.moulberry.rpg\EventListener.java|672|677|event|param|io.github.moulberry.rpg.EventListener|onPlayerChangeWorld|(Lorg/bukkit/event/player/PlayerChangedWorldEvent;)V|event|0
+      @|io.github.moulberry.rpg\EventListener.java|678|685|getFrom|method|org.bukkit.event.player.PlayerChangedWorldEvent|getFrom|()Lorg/bukkit/World;
+      @|io.github.moulberry.rpg\EventListener.java|688|698|getPlayers|method|org.bukkit.World|getPlayers|()Ljava/util/List;
+      @|io.github.moulberry.rpg\EventListener.java|701|708|isEmpty|method|java.util.Collection|isEmpty|()Z
+      @|io.github.moulberry.rpg\EventListener.java|730|736|Bukkit|class|org.bukkit.Bukkit
+      @|io.github.moulberry.rpg\EventListener.java|737|748|unloadWorld|method|org.bukkit.Bukkit|unloadWorld|(Lorg/bukkit/World;Z)Z
+      @|io.github.moulberry.rpg\EventListener.java|749|754|event|param|io.github.moulberry.rpg.EventListener|onPlayerChangeWorld|(Lorg/bukkit/event/player/PlayerChangedWorldEvent;)V|event|0
+      @|io.github.moulberry.rpg\EventListener.java|755|762|getFrom|method|org.bukkit.event.player.PlayerChangedWorldEvent|getFrom|()Lorg/bukkit/World;
+      @|io.github.moulberry.rpg\EventListener.java|803|812|Exception|class|java.lang.Exception
+      @|io.github.moulberry.rpg\EventListener.java|832|847|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+   Method End: onPlayerChangeWorld(Lorg/bukkit/event/player/PlayerChangedWorldEvent;)V
+Class End  : io.github.moulberry.rpg.EventListener
+endProcessing io.github.moulberry.rpg\EventListener.java
+
+processing io.github.moulberry.rpg\Main.java
+@|io.github.moulberry.rpg\Main.java|8|31|io.github.moulberry.rpg|package|io.github.moulberry.rpg|(file)
+Class Start: io.github.moulberry.rpg.Main
+   Method Start: onEnable()V
+      @|io.github.moulberry.rpg\Main.java|380|388|onEnable|method|org.bukkit.plugin.Plugin|onEnable|()V
+      @|io.github.moulberry.rpg\Main.java|401|410|getServer|method|org.bukkit.plugin.Plugin|getServer|()Lorg/bukkit/Server;
+      @|io.github.moulberry.rpg\Main.java|413|429|getPluginManager|method|org.bukkit.Server|getPluginManager|()Lorg/bukkit/plugin/PluginManager;
+      @|io.github.moulberry.rpg\Main.java|432|446|registerEvents|method|org.bukkit.plugin.PluginManager|registerEvents|(Lorg/bukkit/event/Listener;Lorg/bukkit/plugin/Plugin;)V
+      @|io.github.moulberry.rpg\Main.java|451|464|EventListener|class|EventListener
+      @|io.github.moulberry.rpg\Main.java|484|494|getCommand|method|org.bukkit.plugin.java.JavaPlugin|getCommand|(Ljava/lang/String;)Lorg/bukkit/command/PluginCommand;
+      @|io.github.moulberry.rpg\Main.java|515|526|setExecutor|method|org.bukkit.command.PluginCommand|setExecutor|(Lorg/bukkit/command/CommandExecutor;)V
+      @|io.github.moulberry.rpg\Main.java|531|554|CommandGotoDynamicWorld|class|CommandGotoDynamicWorld
+      @|io.github.moulberry.rpg\Main.java|567|577|getCommand|method|org.bukkit.plugin.java.JavaPlugin|getCommand|(Ljava/lang/String;)Lorg/bukkit/command/PluginCommand;
+      @|io.github.moulberry.rpg\Main.java|599|610|setExecutor|method|org.bukkit.command.PluginCommand|setExecutor|(Lorg/bukkit/command/CommandExecutor;)V
+      @|io.github.moulberry.rpg\Main.java|615|639|CommandGotoInstanceWorld|class|CommandGotoInstanceWorld
+      @|io.github.moulberry.rpg\Main.java|652|662|getCommand|method|org.bukkit.plugin.java.JavaPlugin|getCommand|(Ljava/lang/String;)Lorg/bukkit/command/PluginCommand;
+      @|io.github.moulberry.rpg\Main.java|683|694|setExecutor|method|org.bukkit.command.PluginCommand|setExecutor|(Lorg/bukkit/command/CommandExecutor;)V
+      @|io.github.moulberry.rpg\Main.java|699|722|CommandCreateEmptyWorld|class|CommandCreateEmptyWorld
+   Method End: onEnable()V
+   Method Start: onDisable()V
+      @|io.github.moulberry.rpg\Main.java|750|759|onDisable|method|org.bukkit.plugin.Plugin|onDisable|()V
+      @|io.github.moulberry.rpg\Main.java|776|781|World|class|org.bukkit.World
+      @|io.github.moulberry.rpg\Main.java|790|796|Bukkit|class|org.bukkit.Bukkit
+      @|io.github.moulberry.rpg\Main.java|797|806|getWorlds|method|org.bukkit.Bukkit|getWorlds|()Ljava/util/List;
+      @|io.github.moulberry.rpg\Main.java|824|830|Bukkit|class|org.bukkit.Bukkit
+      @|io.github.moulberry.rpg\Main.java|831|842|unloadWorld|method|org.bukkit.Bukkit|unloadWorld|(Lorg/bukkit/World;Z)Z
+   Method End: onDisable()V
+Class End  : io.github.moulberry.rpg.Main
+endProcessing io.github.moulberry.rpg\Main.java
+
+processing io.github.moulberry.rpg\Util.java
+@|io.github.moulberry.rpg\Util.java|8|31|io.github.moulberry.rpg|package|io.github.moulberry.rpg|(file)
+Class Start: io.github.moulberry.rpg.Util
+   Method Start: copyFileStructure(Ljava/io/File;Ljava/io/File;)V
+      @|io.github.moulberry.rpg\Util.java|173|190|copyFileStructure|method|io.github.moulberry.rpg.Util|copyFileStructure|(Ljava/io/File;Ljava/io/File;)V
+      @|io.github.moulberry.rpg\Util.java|191|195|File|class|java.io.File
+      @|io.github.moulberry.rpg\Util.java|196|202|source|param|io.github.moulberry.rpg.Util|copyFileStructure|(Ljava/io/File;Ljava/io/File;)V|source|0
+      @|io.github.moulberry.rpg\Util.java|204|208|File|class|java.io.File
+      @|io.github.moulberry.rpg\Util.java|209|215|target|param|io.github.moulberry.rpg.Util|copyFileStructure|(Ljava/io/File;Ljava/io/File;)V|target|1
+      @|io.github.moulberry.rpg\Util.java|244|253|ArrayList|class|java.util.ArrayList
+      @|io.github.moulberry.rpg\Util.java|254|260|String|class|java.lang.String
+      @|io.github.moulberry.rpg\Util.java|275|284|ArrayList|class|java.util.ArrayList
+      @|io.github.moulberry.rpg\Util.java|287|293|Arrays|class|java.util.Arrays
+      @|io.github.moulberry.rpg\Util.java|294|300|asList|method|java.util.Arrays|asList|([Ljava/lang/Object;)Ljava/util/List;
+      @|io.github.moulberry.rpg\Util.java|353|361|contains|method|java.util.Collection|contains|(Ljava/lang/Object;)Z
+      @|io.github.moulberry.rpg\Util.java|362|368|source|param|io.github.moulberry.rpg.Util|copyFileStructure|(Ljava/io/File;Ljava/io/File;)V|source|0
+      @|io.github.moulberry.rpg\Util.java|369|376|getName|method|java.io.File|getName|()Ljava/lang/String;
+      @|io.github.moulberry.rpg\Util.java|402|408|source|param|io.github.moulberry.rpg.Util|copyFileStructure|(Ljava/io/File;Ljava/io/File;)V|source|0
+      @|io.github.moulberry.rpg\Util.java|409|420|isDirectory|method|java.io.File|isDirectory|()Z
+      @|io.github.moulberry.rpg\Util.java|450|456|target|param|io.github.moulberry.rpg.Util|copyFileStructure|(Ljava/io/File;Ljava/io/File;)V|target|1
+      @|io.github.moulberry.rpg\Util.java|457|463|exists|method|java.io.File|exists|()Z
+      @|io.github.moulberry.rpg\Util.java|496|502|target|param|io.github.moulberry.rpg.Util|copyFileStructure|(Ljava/io/File;Ljava/io/File;)V|target|1
+      @|io.github.moulberry.rpg\Util.java|503|509|mkdirs|method|java.io.File|mkdirs|()Z
+      @|io.github.moulberry.rpg\Util.java|551|562|IOException|class|java.io.IOException
+      @|io.github.moulberry.rpg\Util.java|620|626|String|class|java.lang.String
+      @|io.github.moulberry.rpg\Util.java|637|643|source|param|io.github.moulberry.rpg.Util|copyFileStructure|(Ljava/io/File;Ljava/io/File;)V|source|0
+      @|io.github.moulberry.rpg\Util.java|644|648|list|method|java.io.File|list|()[Ljava/lang/String;
+      @|io.github.moulberry.rpg\Util.java|677|683|String|class|java.lang.String
+      @|io.github.moulberry.rpg\Util.java|724|728|File|class|java.io.File
+      @|io.github.moulberry.rpg\Util.java|743|747|File|class|java.io.File
+      @|io.github.moulberry.rpg\Util.java|748|754|source|param|io.github.moulberry.rpg.Util|copyFileStructure|(Ljava/io/File;Ljava/io/File;)V|source|0
+      @|io.github.moulberry.rpg\Util.java|787|791|File|class|java.io.File
+      @|io.github.moulberry.rpg\Util.java|807|811|File|class|java.io.File
+      @|io.github.moulberry.rpg\Util.java|812|818|target|param|io.github.moulberry.rpg.Util|copyFileStructure|(Ljava/io/File;Ljava/io/File;)V|target|1
+      @|io.github.moulberry.rpg\Util.java|851|868|copyFileStructure|method|io.github.moulberry.rpg.Util|copyFileStructure|(Ljava/io/File;Ljava/io/File;)V
+      @|io.github.moulberry.rpg\Util.java|956|967|InputStream|class|java.io.InputStream
+      @|io.github.moulberry.rpg\Util.java|977|992|FileInputStream|class|java.io.FileInputStream
+      @|io.github.moulberry.rpg\Util.java|993|999|source|param|io.github.moulberry.rpg.Util|copyFileStructure|(Ljava/io/File;Ljava/io/File;)V|source|0
+      @|io.github.moulberry.rpg\Util.java|1022|1034|OutputStream|class|java.io.OutputStream
+      @|io.github.moulberry.rpg\Util.java|1045|1061|FileOutputStream|class|java.io.FileOutputStream
+      @|io.github.moulberry.rpg\Util.java|1062|1068|target|param|io.github.moulberry.rpg.Util|copyFileStructure|(Ljava/io/File;Ljava/io/File;)V|target|1
+      @|io.github.moulberry.rpg\Util.java|1195|1199|read|method|java.io.InputStream|read|([B)I
+      @|io.github.moulberry.rpg\Util.java|1242|1247|write|method|java.io.OutputStream|write|([BII)V
+      @|io.github.moulberry.rpg\Util.java|1291|1296|close|method|java.lang.AutoCloseable|close|()V
+      @|io.github.moulberry.rpg\Util.java|1324|1329|close|method|java.lang.AutoCloseable|close|()V
+      @|io.github.moulberry.rpg\Util.java|1382|1393|IOException|class|java.io.IOException
+      @|io.github.moulberry.rpg\Util.java|1421|1437|RuntimeException|class|java.lang.RuntimeException
+   Method End: copyFileStructure(Ljava/io/File;Ljava/io/File;)V
+   Method Start: UUIDfromString(Ljava/lang/String;)Ljava/util/UUID;
+      @|io.github.moulberry.rpg\Util.java|1482|1496|UUIDfromString|method|io.github.moulberry.rpg.Util|UUIDfromString|(Ljava/lang/String;)Ljava/util/UUID;
+      @|io.github.moulberry.rpg\Util.java|1477|1481|UUID|class|java.util.UUID
+      @|io.github.moulberry.rpg\Util.java|1497|1503|String|class|java.lang.String
+      @|io.github.moulberry.rpg\Util.java|1504|1507|str|param|io.github.moulberry.rpg.Util|UUIDfromString|(Ljava/lang/String;)Ljava/util/UUID;|str|0
+      @|io.github.moulberry.rpg\Util.java|1522|1525|str|param|io.github.moulberry.rpg.Util|UUIDfromString|(Ljava/lang/String;)Ljava/util/UUID;|str|0
+      @|io.github.moulberry.rpg\Util.java|1526|1532|length|method|java.lang.CharSequence|length|()I
+      @|io.github.moulberry.rpg\Util.java|1566|1590|IllegalArgumentException|class|java.lang.IllegalArgumentException
+      @|io.github.moulberry.rpg\Util.java|1615|1618|str|param|io.github.moulberry.rpg.Util|UUIDfromString|(Ljava/lang/String;)Ljava/util/UUID;|str|0
+      @|io.github.moulberry.rpg\Util.java|1640|1646|String|class|java.lang.String
+      @|io.github.moulberry.rpg\Util.java|1666|1672|String|class|java.lang.String
+      @|io.github.moulberry.rpg\Util.java|1702|1705|str|param|io.github.moulberry.rpg.Util|UUIDfromString|(Ljava/lang/String;)Ljava/util/UUID;|str|0
+      @|io.github.moulberry.rpg\Util.java|1706|1715|substring|method|java.lang.String|substring|(II)Ljava/lang/String;
+      @|io.github.moulberry.rpg\Util.java|1747|1750|str|param|io.github.moulberry.rpg.Util|UUIDfromString|(Ljava/lang/String;)Ljava/util/UUID;|str|0
+      @|io.github.moulberry.rpg\Util.java|1751|1760|substring|method|java.lang.String|substring|(II)Ljava/lang/String;
+      @|io.github.moulberry.rpg\Util.java|1793|1796|str|param|io.github.moulberry.rpg.Util|UUIDfromString|(Ljava/lang/String;)Ljava/util/UUID;|str|0
+      @|io.github.moulberry.rpg\Util.java|1797|1806|substring|method|java.lang.String|substring|(II)Ljava/lang/String;
+      @|io.github.moulberry.rpg\Util.java|1840|1843|str|param|io.github.moulberry.rpg.Util|UUIDfromString|(Ljava/lang/String;)Ljava/util/UUID;|str|0
+      @|io.github.moulberry.rpg\Util.java|1844|1853|substring|method|java.lang.String|substring|(II)Ljava/lang/String;
+      @|io.github.moulberry.rpg\Util.java|1887|1890|str|param|io.github.moulberry.rpg.Util|UUIDfromString|(Ljava/lang/String;)Ljava/util/UUID;|str|0
+      @|io.github.moulberry.rpg\Util.java|1891|1900|substring|method|java.lang.String|substring|(II)Ljava/lang/String;
+      @|io.github.moulberry.rpg\Util.java|2019|2023|Long|class|java.lang.Long
+      @|io.github.moulberry.rpg\Util.java|2024|2030|decode|method|java.lang.Long|decode|(Ljava/lang/String;)Ljava/lang/Long;
+      @|io.github.moulberry.rpg\Util.java|2046|2055|longValue|method|java.lang.Number|longValue|()J
+      @|io.github.moulberry.rpg\Util.java|2110|2114|Long|class|java.lang.Long
+      @|io.github.moulberry.rpg\Util.java|2115|2121|decode|method|java.lang.Long|decode|(Ljava/lang/String;)Ljava/lang/Long;
+      @|io.github.moulberry.rpg\Util.java|2137|2146|longValue|method|java.lang.Number|longValue|()J
+      @|io.github.moulberry.rpg\Util.java|2201|2205|Long|class|java.lang.Long
+      @|io.github.moulberry.rpg\Util.java|2206|2212|decode|method|java.lang.Long|decode|(Ljava/lang/String;)Ljava/lang/Long;
+      @|io.github.moulberry.rpg\Util.java|2228|2237|longValue|method|java.lang.Number|longValue|()J
+      @|io.github.moulberry.rpg\Util.java|2270|2274|Long|class|java.lang.Long
+      @|io.github.moulberry.rpg\Util.java|2275|2281|decode|method|java.lang.Long|decode|(Ljava/lang/String;)Ljava/lang/Long;
+      @|io.github.moulberry.rpg\Util.java|2297|2306|longValue|method|java.lang.Number|longValue|()J
+      @|io.github.moulberry.rpg\Util.java|2363|2367|Long|class|java.lang.Long
+      @|io.github.moulberry.rpg\Util.java|2368|2374|decode|method|java.lang.Long|decode|(Ljava/lang/String;)Ljava/lang/Long;
+      @|io.github.moulberry.rpg\Util.java|2390|2399|longValue|method|java.lang.Number|longValue|()J
+      @|io.github.moulberry.rpg\Util.java|2423|2427|UUID|class|java.util.UUID
+   Method End: UUIDfromString(Ljava/lang/String;)Ljava/util/UUID;
+Class End  : io.github.moulberry.rpg.Util
+endProcessing io.github.moulberry.rpg\Util.java
+
+processing io.github.moulberry.rpg\WorldManager.java
+@|io.github.moulberry.rpg\WorldManager.java|8|31|io.github.moulberry.rpg|package|io.github.moulberry.rpg|(file)
+Class Start: io.github.moulberry.rpg.WorldManager
+   @|io.github.moulberry.rpg\WorldManager.java|255|267|WorldManager|class|io.github.moulberry.rpg.WorldManager
+   @|io.github.moulberry.rpg\WorldManager.java|268|276|INSTANCE|field|io.github.moulberry.rpg.WorldManager|INSTANCE|
+   @|io.github.moulberry.rpg\WorldManager.java|283|295|WorldManager|class|io.github.moulberry.rpg.WorldManager
+   Method Start: getInstance()Lio/github/moulberry/rpg/WorldManager;
+      @|io.github.moulberry.rpg\WorldManager.java|331|342|getInstance|method|io.github.moulberry.rpg.WorldManager|getInstance|()Lio/github/moulberry/rpg/WorldManager;
+      @|io.github.moulberry.rpg\WorldManager.java|318|330|WorldManager|class|io.github.moulberry.rpg.WorldManager
+      @|io.github.moulberry.rpg\WorldManager.java|362|370|INSTANCE|field|io.github.moulberry.rpg.WorldManager|INSTANCE
+   Method End: getInstance()Lio/github/moulberry/rpg/WorldManager;
+   @|io.github.moulberry.rpg\WorldManager.java|388|405|currentInstanceID|field|io.github.moulberry.rpg.WorldManager|currentInstanceID|
+   Method Start: createEmptyWorld(Ljava/lang/String;)Lorg/bukkit/World;
+      @|io.github.moulberry.rpg\WorldManager.java|429|445|createEmptyWorld|method|io.github.moulberry.rpg.WorldManager|createEmptyWorld|(Ljava/lang/String;)Lorg/bukkit/World;
+      @|io.github.moulberry.rpg\WorldManager.java|423|428|World|class|org.bukkit.World
+      @|io.github.moulberry.rpg\WorldManager.java|446|452|String|class|java.lang.String
+      @|io.github.moulberry.rpg\WorldManager.java|453|457|name|param|io.github.moulberry.rpg.WorldManager|createEmptyWorld|(Ljava/lang/String;)Lorg/bukkit/World;|name|0
+      @|io.github.moulberry.rpg\WorldManager.java|469|481|WorldCreator|class|org.bukkit.WorldCreator
+      @|io.github.moulberry.rpg\WorldManager.java|491|503|WorldCreator|class|org.bukkit.WorldCreator
+      @|io.github.moulberry.rpg\WorldManager.java|504|508|name|param|io.github.moulberry.rpg.WorldManager|createEmptyWorld|(Ljava/lang/String;)Lorg/bukkit/World;|name|0
+      @|io.github.moulberry.rpg\WorldManager.java|523|532|generator|method|org.bukkit.WorldCreator|generator|(Lorg/bukkit/generator/ChunkGenerator;)Lorg/bukkit/WorldCreator;
+      @|io.github.moulberry.rpg\WorldManager.java|537|551|ChunkGenerator|class|org.bukkit.generator.ChunkGenerator
+      Anon Class Start: io.github.moulberry.rpg.WorldManager$1
+         Method Start: generateChunkData(Lorg/bukkit/World;Ljava/util/Random;IILorg/bukkit/generator/ChunkGenerator$BiomeGrid;)Lorg/bukkit/generator/ChunkGenerator$ChunkData;
+            @|io.github.moulberry.rpg\WorldManager.java|585|602|generateChunkData|method|org.bukkit.generator.ChunkGenerator|generateChunkData|(Lorg/bukkit/World;Ljava/util/Random;IILorg/bukkit/generator/ChunkGenerator$BiomeGrid;)Lorg/bukkit/generator/ChunkGenerator$ChunkData;
+            @|io.github.moulberry.rpg\WorldManager.java|575|584|ChunkData|class|org.bukkit.generator.ChunkGenerator.ChunkData
+            @|io.github.moulberry.rpg\WorldManager.java|603|608|World|class|org.bukkit.World
+            @|io.github.moulberry.rpg\WorldManager.java|609|614|world|param|io.github.moulberry.rpg.WorldManager$1|generateChunkData|(Lorg/bukkit/World;Ljava/util/Random;IILorg/bukkit/generator/ChunkGenerator$BiomeGrid;)Lorg/bukkit/generator/ChunkGenerator$ChunkData;|world|0
+            @|io.github.moulberry.rpg\WorldManager.java|616|622|Random|class|java.util.Random
+            @|io.github.moulberry.rpg\WorldManager.java|623|629|random|param|io.github.moulberry.rpg.WorldManager$1|generateChunkData|(Lorg/bukkit/World;Ljava/util/Random;IILorg/bukkit/generator/ChunkGenerator$BiomeGrid;)Lorg/bukkit/generator/ChunkGenerator$ChunkData;|random|1
+            @|io.github.moulberry.rpg\WorldManager.java|635|636|x|param|io.github.moulberry.rpg.WorldManager$1|generateChunkData|(Lorg/bukkit/World;Ljava/util/Random;IILorg/bukkit/generator/ChunkGenerator$BiomeGrid;)Lorg/bukkit/generator/ChunkGenerator$ChunkData;|x|2
+            @|io.github.moulberry.rpg\WorldManager.java|642|643|z|param|io.github.moulberry.rpg.WorldManager$1|generateChunkData|(Lorg/bukkit/World;Ljava/util/Random;IILorg/bukkit/generator/ChunkGenerator$BiomeGrid;)Lorg/bukkit/generator/ChunkGenerator$ChunkData;|z|3
+            @|io.github.moulberry.rpg\WorldManager.java|645|654|BiomeGrid|class|org.bukkit.generator.ChunkGenerator.BiomeGrid
+            @|io.github.moulberry.rpg\WorldManager.java|655|660|biome|param|io.github.moulberry.rpg.WorldManager$1|generateChunkData|(Lorg/bukkit/World;Ljava/util/Random;IILorg/bukkit/generator/ChunkGenerator$BiomeGrid;)Lorg/bukkit/generator/ChunkGenerator$ChunkData;|biome|4
+            @|io.github.moulberry.rpg\WorldManager.java|687|693|Bukkit|class|org.bukkit.Bukkit
+            @|io.github.moulberry.rpg\WorldManager.java|694|709|createChunkData|method|org.bukkit.Bukkit|createChunkData|(Lorg/bukkit/World;)Lorg/bukkit/generator/ChunkGenerator$ChunkData;
+            @|io.github.moulberry.rpg\WorldManager.java|710|715|world|param|io.github.moulberry.rpg.WorldManager$1|generateChunkData|(Lorg/bukkit/World;Ljava/util/Random;IILorg/bukkit/generator/ChunkGenerator$BiomeGrid;)Lorg/bukkit/generator/ChunkGenerator$ChunkData;|world|0
+         Method End: generateChunkData(Lorg/bukkit/World;Ljava/util/Random;IILorg/bukkit/generator/ChunkGenerator$BiomeGrid;)Lorg/bukkit/generator/ChunkGenerator$ChunkData;
+      Anon Class End: io.github.moulberry.rpg.WorldManager$1
+      @|io.github.moulberry.rpg\WorldManager.java|763|774|createWorld|method|org.bukkit.WorldCreator|createWorld|()Lorg/bukkit/World;
+   Method End: createEmptyWorld(Ljava/lang/String;)Lorg/bukkit/World;
+   Method Start: getDynamicWorlds(Ljava/lang/String;Ljava/util/UUID;)Ljava/util/List;
+      @|io.github.moulberry.rpg\WorldManager.java|818|834|getDynamicWorlds|method|io.github.moulberry.rpg.WorldManager|getDynamicWorlds|(Ljava/lang/String;Ljava/util/UUID;)Ljava/util/List;
+      @|io.github.moulberry.rpg\WorldManager.java|801|816|DynamicWorldRef|class|io.github.moulberry.rpg.WorldManager.DynamicWorldRef
+      @|io.github.moulberry.rpg\WorldManager.java|796|800|List|class|java.util.List
+      @|io.github.moulberry.rpg\WorldManager.java|835|841|String|class|java.lang.String
+      @|io.github.moulberry.rpg\WorldManager.java|842|854|templateName|param|io.github.moulberry.rpg.WorldManager|getDynamicWorlds|(Ljava/lang/String;Ljava/util/UUID;)Ljava/util/List;|templateName|0
+      @|io.github.moulberry.rpg\WorldManager.java|856|860|UUID|class|java.util.UUID
+      @|io.github.moulberry.rpg\WorldManager.java|861|867|player|param|io.github.moulberry.rpg.WorldManager|getDynamicWorlds|(Ljava/lang/String;Ljava/util/UUID;)Ljava/util/List;|player|1
+      @|io.github.moulberry.rpg\WorldManager.java|879|883|List|class|java.util.List
+      @|io.github.moulberry.rpg\WorldManager.java|884|899|DynamicWorldRef|class|io.github.moulberry.rpg.WorldManager.DynamicWorldRef
+      @|io.github.moulberry.rpg\WorldManager.java|912|921|ArrayList|class|java.util.ArrayList
+      @|io.github.moulberry.rpg\WorldManager.java|935|939|File|class|java.io.File
+      @|io.github.moulberry.rpg\WorldManager.java|953|957|File|class|java.io.File
+      @|io.github.moulberry.rpg\WorldManager.java|958|964|Bukkit|class|org.bukkit.Bukkit
+      @|io.github.moulberry.rpg\WorldManager.java|965|982|getWorldContainer|method|org.bukkit.Bukkit|getWorldContainer|()Ljava/io/File;
+      @|io.github.moulberry.rpg\WorldManager.java|1004|1010|player|param|io.github.moulberry.rpg.WorldManager|getDynamicWorlds|(Ljava/lang/String;Ljava/util/UUID;)Ljava/util/List;|player|1
+      @|io.github.moulberry.rpg\WorldManager.java|1011|1019|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|io.github.moulberry.rpg\WorldManager.java|1026|1038|templateName|param|io.github.moulberry.rpg.WorldManager|getDynamicWorlds|(Ljava/lang/String;Ljava/util/UUID;)Ljava/util/List;|templateName|0
+      @|io.github.moulberry.rpg\WorldManager.java|1079|1090|isDirectory|method|java.io.File|isDirectory|()Z
+      @|io.github.moulberry.rpg\WorldManager.java|1144|1150|String|class|java.lang.String
+      @|io.github.moulberry.rpg\WorldManager.java|1164|1168|list|method|java.io.File|list|()[Ljava/lang/String;
+      @|io.github.moulberry.rpg\WorldManager.java|1191|1194|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|io.github.moulberry.rpg\WorldManager.java|1199|1214|DynamicWorldRef|class|io.github.moulberry.rpg.WorldManager.DynamicWorldRef
+      @|io.github.moulberry.rpg\WorldManager.java|1215|1227|templateName|param|io.github.moulberry.rpg.WorldManager|getDynamicWorlds|(Ljava/lang/String;Ljava/util/UUID;)Ljava/util/List;|templateName|0
+      @|io.github.moulberry.rpg\WorldManager.java|1229|1235|player|param|io.github.moulberry.rpg.WorldManager|getDynamicWorlds|(Ljava/lang/String;Ljava/util/UUID;)Ljava/util/List;|player|1
+      @|io.github.moulberry.rpg\WorldManager.java|1237|1241|Long|class|java.lang.Long
+      @|io.github.moulberry.rpg\WorldManager.java|1242|1251|parseLong|method|java.lang.Long|parseLong|(Ljava/lang/String;)J
+   Method End: getDynamicWorlds(Ljava/lang/String;Ljava/util/UUID;)Ljava/util/List;
+   Method Start: createInstanceWorldFromDynamic(Lio/github/moulberry/rpg/WorldManager$DynamicWorldRef;)Lorg/bukkit/World;
+      @|io.github.moulberry.rpg\WorldManager.java|1316|1346|createInstanceWorldFromDynamic|method|io.github.moulberry.rpg.WorldManager|createInstanceWorldFromDynamic|(Lio/github/moulberry/rpg/WorldManager$DynamicWorldRef;)Lorg/bukkit/World;
+      @|io.github.moulberry.rpg\WorldManager.java|1310|1315|World|class|org.bukkit.World
+      @|io.github.moulberry.rpg\WorldManager.java|1347|1362|DynamicWorldRef|class|io.github.moulberry.rpg.WorldManager.DynamicWorldRef
+      @|io.github.moulberry.rpg\WorldManager.java|1363|1366|ref|param|io.github.moulberry.rpg.WorldManager|createInstanceWorldFromDynamic|(Lio/github/moulberry/rpg/WorldManager$DynamicWorldRef;)Lorg/bukkit/World;|ref|0
+      @|io.github.moulberry.rpg\WorldManager.java|1378|1384|String|class|java.lang.String
+      @|io.github.moulberry.rpg\WorldManager.java|1400|1403|ref|param|io.github.moulberry.rpg.WorldManager|createInstanceWorldFromDynamic|(Lio/github/moulberry/rpg/WorldManager$DynamicWorldRef;)Lorg/bukkit/World;|ref|0
+      @|io.github.moulberry.rpg\WorldManager.java|1404|1410|toName|method|io.github.moulberry.rpg.WorldManager.DynamicWorldRef|toName|()Ljava/lang/String;
+      @|io.github.moulberry.rpg\WorldManager.java|1423|1435|WorldCreator|class|org.bukkit.WorldCreator
+      @|io.github.moulberry.rpg\WorldManager.java|1445|1457|WorldCreator|class|org.bukkit.WorldCreator
+      @|io.github.moulberry.rpg\WorldManager.java|1484|1493|generator|method|org.bukkit.WorldCreator|generator|(Lorg/bukkit/generator/ChunkGenerator;)Lorg/bukkit/WorldCreator;
+      @|io.github.moulberry.rpg\WorldManager.java|1498|1512|ChunkGenerator|class|org.bukkit.generator.ChunkGenerator
+      Anon Class Start: io.github.moulberry.rpg.WorldManager$2
+         Method Start: generateChunkData(Lorg/bukkit/World;Ljava/util/Random;IILorg/bukkit/generator/ChunkGenerator$BiomeGrid;)Lorg/bukkit/generator/ChunkGenerator$ChunkData;
+            @|io.github.moulberry.rpg\WorldManager.java|1546|1563|generateChunkData|method|org.bukkit.generator.ChunkGenerator|generateChunkData|(Lorg/bukkit/World;Ljava/util/Random;IILorg/bukkit/generator/ChunkGenerator$BiomeGrid;)Lorg/bukkit/generator/ChunkGenerator$ChunkData;
+            @|io.github.moulberry.rpg\WorldManager.java|1536|1545|ChunkData|class|org.bukkit.generator.ChunkGenerator.ChunkData
+            @|io.github.moulberry.rpg\WorldManager.java|1564|1569|World|class|org.bukkit.World
+            @|io.github.moulberry.rpg\WorldManager.java|1570|1575|world|param|io.github.moulberry.rpg.WorldManager$2|generateChunkData|(Lorg/bukkit/World;Ljava/util/Random;IILorg/bukkit/generator/ChunkGenerator$BiomeGrid;)Lorg/bukkit/generator/ChunkGenerator$ChunkData;|world|0
+            @|io.github.moulberry.rpg\WorldManager.java|1577|1583|Random|class|java.util.Random
+            @|io.github.moulberry.rpg\WorldManager.java|1584|1590|random|param|io.github.moulberry.rpg.WorldManager$2|generateChunkData|(Lorg/bukkit/World;Ljava/util/Random;IILorg/bukkit/generator/ChunkGenerator$BiomeGrid;)Lorg/bukkit/generator/ChunkGenerator$ChunkData;|random|1
+            @|io.github.moulberry.rpg\WorldManager.java|1596|1597|x|param|io.github.moulberry.rpg.WorldManager$2|generateChunkData|(Lorg/bukkit/World;Ljava/util/Random;IILorg/bukkit/generator/ChunkGenerator$BiomeGrid;)Lorg/bukkit/generator/ChunkGenerator$ChunkData;|x|2
+            @|io.github.moulberry.rpg\WorldManager.java|1603|1604|z|param|io.github.moulberry.rpg.WorldManager$2|generateChunkData|(Lorg/bukkit/World;Ljava/util/Random;IILorg/bukkit/generator/ChunkGenerator$BiomeGrid;)Lorg/bukkit/generator/ChunkGenerator$ChunkData;|z|3
+            @|io.github.moulberry.rpg\WorldManager.java|1606|1615|BiomeGrid|class|org.bukkit.generator.ChunkGenerator.BiomeGrid
+            @|io.github.moulberry.rpg\WorldManager.java|1616|1621|biome|param|io.github.moulberry.rpg.WorldManager$2|generateChunkData|(Lorg/bukkit/World;Ljava/util/Random;IILorg/bukkit/generator/ChunkGenerator$BiomeGrid;)Lorg/bukkit/generator/ChunkGenerator$ChunkData;|biome|4
+            @|io.github.moulberry.rpg\WorldManager.java|1648|1654|Bukkit|class|org.bukkit.Bukkit
+            @|io.github.moulberry.rpg\WorldManager.java|1655|1670|createChunkData|method|org.bukkit.Bukkit|createChunkData|(Lorg/bukkit/World;)Lorg/bukkit/generator/ChunkGenerator$ChunkData;
+            @|io.github.moulberry.rpg\WorldManager.java|1671|1676|world|param|io.github.moulberry.rpg.WorldManager$2|generateChunkData|(Lorg/bukkit/World;Ljava/util/Random;IILorg/bukkit/generator/ChunkGenerator$BiomeGrid;)Lorg/bukkit/generator/ChunkGenerator$ChunkData;|world|0
+         Method End: generateChunkData(Lorg/bukkit/World;Ljava/util/Random;IILorg/bukkit/generator/ChunkGenerator$BiomeGrid;)Lorg/bukkit/generator/ChunkGenerator$ChunkData;
+      Anon Class End: io.github.moulberry.rpg.WorldManager$2
+      ERROR SimpleName: Util null
+      ERROR SimpleName: copyFileStructure null
+      @|io.github.moulberry.rpg\WorldManager.java|1740|1744|File|class|java.io.File
+      @|io.github.moulberry.rpg\WorldManager.java|1745|1751|Bukkit|class|org.bukkit.Bukkit
+      @|io.github.moulberry.rpg\WorldManager.java|1752|1769|getWorldContainer|method|org.bukkit.Bukkit|getWorldContainer|()Ljava/io/File;
+      @|io.github.moulberry.rpg\WorldManager.java|1773|1776|ref|param|io.github.moulberry.rpg.WorldManager|createInstanceWorldFromDynamic|(Lio/github/moulberry/rpg/WorldManager$DynamicWorldRef;)Lorg/bukkit/World;|ref|0
+      @|io.github.moulberry.rpg\WorldManager.java|1777|1791|getWorldFolder|method|io.github.moulberry.rpg.WorldManager.DynamicWorldRef|getWorldFolder|()Ljava/lang/String;
+      @|io.github.moulberry.rpg\WorldManager.java|1816|1820|File|class|java.io.File
+      @|io.github.moulberry.rpg\WorldManager.java|1821|1827|Bukkit|class|org.bukkit.Bukkit
+      @|io.github.moulberry.rpg\WorldManager.java|1828|1845|getWorldContainer|method|org.bukkit.Bukkit|getWorldContainer|()Ljava/io/File;
+      @|io.github.moulberry.rpg\WorldManager.java|1874|1879|World|class|org.bukkit.World
+      @|io.github.moulberry.rpg\WorldManager.java|1894|1905|createWorld|method|org.bukkit.WorldCreator|createWorld|()Lorg/bukkit/World;
+      @|io.github.moulberry.rpg\WorldManager.java|1926|1937|setAutoSave|method|org.bukkit.World|setAutoSave|(Z)V
+   Method End: createInstanceWorldFromDynamic(Lio/github/moulberry/rpg/WorldManager$DynamicWorldRef;)Lorg/bukkit/World;
+   Method Start: copyDynamicWorld(Lio/github/moulberry/rpg/WorldManager$DynamicWorldRef;)V
+      @|io.github.moulberry.rpg\WorldManager.java|1994|2010|copyDynamicWorld|method|io.github.moulberry.rpg.WorldManager|copyDynamicWorld|(Lio/github/moulberry/rpg/WorldManager$DynamicWorldRef;)V
+      @|io.github.moulberry.rpg\WorldManager.java|2011|2026|DynamicWorldRef|class|io.github.moulberry.rpg.WorldManager.DynamicWorldRef
+      @|io.github.moulberry.rpg\WorldManager.java|2027|2030|ref|param|io.github.moulberry.rpg.WorldManager|copyDynamicWorld|(Lio/github/moulberry/rpg/WorldManager$DynamicWorldRef;)V|ref|0
+      ERROR SimpleName: Util null
+      ERROR SimpleName: copyFileStructure null
+      @|io.github.moulberry.rpg\WorldManager.java|2069|2073|File|class|java.io.File
+      @|io.github.moulberry.rpg\WorldManager.java|2074|2080|Bukkit|class|org.bukkit.Bukkit
+      @|io.github.moulberry.rpg\WorldManager.java|2081|2098|getWorldContainer|method|org.bukkit.Bukkit|getWorldContainer|()Ljava/io/File;
+      @|io.github.moulberry.rpg\WorldManager.java|2121|2124|ref|param|io.github.moulberry.rpg.WorldManager|copyDynamicWorld|(Lio/github/moulberry/rpg/WorldManager$DynamicWorldRef;)V|ref|0
+      @|io.github.moulberry.rpg\WorldManager.java|2125|2137|templateName|field|io.github.moulberry.rpg.WorldManager.DynamicWorldRef|templateName
+      @|io.github.moulberry.rpg\WorldManager.java|2160|2164|File|class|java.io.File
+      @|io.github.moulberry.rpg\WorldManager.java|2165|2171|Bukkit|class|org.bukkit.Bukkit
+      @|io.github.moulberry.rpg\WorldManager.java|2172|2189|getWorldContainer|method|org.bukkit.Bukkit|getWorldContainer|()Ljava/io/File;
+      @|io.github.moulberry.rpg\WorldManager.java|2193|2196|ref|param|io.github.moulberry.rpg.WorldManager|copyDynamicWorld|(Lio/github/moulberry/rpg/WorldManager$DynamicWorldRef;)V|ref|0
+      @|io.github.moulberry.rpg\WorldManager.java|2197|2211|getWorldFolder|method|io.github.moulberry.rpg.WorldManager.DynamicWorldRef|getWorldFolder|()Ljava/lang/String;
+   Method End: copyDynamicWorld(Lio/github/moulberry/rpg/WorldManager$DynamicWorldRef;)V
+   Method Start: createInstanceWorldFromTemplate(Ljava/lang/String;)Lorg/bukkit/World;
+      @|io.github.moulberry.rpg\WorldManager.java|2241|2272|createInstanceWorldFromTemplate|method|io.github.moulberry.rpg.WorldManager|createInstanceWorldFromTemplate|(Ljava/lang/String;)Lorg/bukkit/World;
+      @|io.github.moulberry.rpg\WorldManager.java|2235|2240|World|class|org.bukkit.World
+      @|io.github.moulberry.rpg\WorldManager.java|2273|2279|String|class|java.lang.String
+      @|io.github.moulberry.rpg\WorldManager.java|2280|2292|templateName|param|io.github.moulberry.rpg.WorldManager|createInstanceWorldFromTemplate|(Ljava/lang/String;)Lorg/bukkit/World;|templateName|0
+      @|io.github.moulberry.rpg\WorldManager.java|2304|2310|String|class|java.lang.String
+      @|io.github.moulberry.rpg\WorldManager.java|2338|2350|templateName|param|io.github.moulberry.rpg.WorldManager|createInstanceWorldFromTemplate|(Ljava/lang/String;)Lorg/bukkit/World;|templateName|0
+      @|io.github.moulberry.rpg\WorldManager.java|2358|2375|currentInstanceID|field|io.github.moulberry.rpg.WorldManager|currentInstanceID
+      @|io.github.moulberry.rpg\WorldManager.java|2387|2399|WorldCreator|class|org.bukkit.WorldCreator
+      @|io.github.moulberry.rpg\WorldManager.java|2409|2421|WorldCreator|class|org.bukkit.WorldCreator
+      @|io.github.moulberry.rpg\WorldManager.java|2448|2457|generator|method|org.bukkit.WorldCreator|generator|(Lorg/bukkit/generator/ChunkGenerator;)Lorg/bukkit/WorldCreator;
+      @|io.github.moulberry.rpg\WorldManager.java|2462|2476|ChunkGenerator|class|org.bukkit.generator.ChunkGenerator
+      Anon Class Start: io.github.moulberry.rpg.WorldManager$3
+         Method Start: generateChunkData(Lorg/bukkit/World;Ljava/util/Random;IILorg/bukkit/generator/ChunkGenerator$BiomeGrid;)Lorg/bukkit/generator/ChunkGenerator$ChunkData;
+            @|io.github.moulberry.rpg\WorldManager.java|2510|2527|generateChunkData|method|org.bukkit.generator.ChunkGenerator|generateChunkData|(Lorg/bukkit/World;Ljava/util/Random;IILorg/bukkit/generator/ChunkGenerator$BiomeGrid;)Lorg/bukkit/generator/ChunkGenerator$ChunkData;
+            @|io.github.moulberry.rpg\WorldManager.java|2500|2509|ChunkData|class|org.bukkit.generator.ChunkGenerator.ChunkData
+            @|io.github.moulberry.rpg\WorldManager.java|2528|2533|World|class|org.bukkit.World
+            @|io.github.moulberry.rpg\WorldManager.java|2534|2539|world|param|io.github.moulberry.rpg.WorldManager$3|generateChunkData|(Lorg/bukkit/World;Ljava/util/Random;IILorg/bukkit/generator/ChunkGenerator$BiomeGrid;)Lorg/bukkit/generator/ChunkGenerator$ChunkData;|world|0
+            @|io.github.moulberry.rpg\WorldManager.java|2541|2547|Random|class|java.util.Random
+            @|io.github.moulberry.rpg\WorldManager.java|2548|2554|random|param|io.github.moulberry.rpg.WorldManager$3|generateChunkData|(Lorg/bukkit/World;Ljava/util/Random;IILorg/bukkit/generator/ChunkGenerator$BiomeGrid;)Lorg/bukkit/generator/ChunkGenerator$ChunkData;|random|1
+            @|io.github.moulberry.rpg\WorldManager.java|2560|2561|x|param|io.github.moulberry.rpg.WorldManager$3|generateChunkData|(Lorg/bukkit/World;Ljava/util/Random;IILorg/bukkit/generator/ChunkGenerator$BiomeGrid;)Lorg/bukkit/generator/ChunkGenerator$ChunkData;|x|2
+            @|io.github.moulberry.rpg\WorldManager.java|2567|2568|z|param|io.github.moulberry.rpg.WorldManager$3|generateChunkData|(Lorg/bukkit/World;Ljava/util/Random;IILorg/bukkit/generator/ChunkGenerator$BiomeGrid;)Lorg/bukkit/generator/ChunkGenerator$ChunkData;|z|3
+            @|io.github.moulberry.rpg\WorldManager.java|2570|2579|BiomeGrid|class|org.bukkit.generator.ChunkGenerator.BiomeGrid
+            @|io.github.moulberry.rpg\WorldManager.java|2580|2585|biome|param|io.github.moulberry.rpg.WorldManager$3|generateChunkData|(Lorg/bukkit/World;Ljava/util/Random;IILorg/bukkit/generator/ChunkGenerator$BiomeGrid;)Lorg/bukkit/generator/ChunkGenerator$ChunkData;|biome|4
+            @|io.github.moulberry.rpg\WorldManager.java|2612|2618|Bukkit|class|org.bukkit.Bukkit
+            @|io.github.moulberry.rpg\WorldManager.java|2619|2634|createChunkData|method|org.bukkit.Bukkit|createChunkData|(Lorg/bukkit/World;)Lorg/bukkit/generator/ChunkGenerator$ChunkData;
+            @|io.github.moulberry.rpg\WorldManager.java|2635|2640|world|param|io.github.moulberry.rpg.WorldManager$3|generateChunkData|(Lorg/bukkit/World;Ljava/util/Random;IILorg/bukkit/generator/ChunkGenerator$BiomeGrid;)Lorg/bukkit/generator/ChunkGenerator$ChunkData;|world|0
+         Method End: generateChunkData(Lorg/bukkit/World;Ljava/util/Random;IILorg/bukkit/generator/ChunkGenerator$BiomeGrid;)Lorg/bukkit/generator/ChunkGenerator$ChunkData;
+      Anon Class End: io.github.moulberry.rpg.WorldManager$3
+      ERROR SimpleName: Util null
+      ERROR SimpleName: copyFileStructure null
+      @|io.github.moulberry.rpg\WorldManager.java|2704|2708|File|class|java.io.File
+      @|io.github.moulberry.rpg\WorldManager.java|2709|2715|Bukkit|class|org.bukkit.Bukkit
+      @|io.github.moulberry.rpg\WorldManager.java|2716|2733|getWorldContainer|method|org.bukkit.Bukkit|getWorldContainer|()Ljava/io/File;
+      @|io.github.moulberry.rpg\WorldManager.java|2756|2768|templateName|param|io.github.moulberry.rpg.WorldManager|createInstanceWorldFromTemplate|(Ljava/lang/String;)Lorg/bukkit/World;|templateName|0
+      @|io.github.moulberry.rpg\WorldManager.java|2791|2795|File|class|java.io.File
+      @|io.github.moulberry.rpg\WorldManager.java|2796|2802|Bukkit|class|org.bukkit.Bukkit
+      @|io.github.moulberry.rpg\WorldManager.java|2803|2820|getWorldContainer|method|org.bukkit.Bukkit|getWorldContainer|()Ljava/io/File;
+      @|io.github.moulberry.rpg\WorldManager.java|2849|2854|World|class|org.bukkit.World
+      @|io.github.moulberry.rpg\WorldManager.java|2869|2880|createWorld|method|org.bukkit.WorldCreator|createWorld|()Lorg/bukkit/World;
+      @|io.github.moulberry.rpg\WorldManager.java|2901|2912|setAutoSave|method|org.bukkit.World|setAutoSave|(Z)V
+   Method End: createInstanceWorldFromTemplate(Ljava/lang/String;)Lorg/bukkit/World;
+   Method Start: dynamicWorldRefFromName(Ljava/lang/String;)Lio/github/moulberry/rpg/WorldManager$DynamicWorldRef;
+      @|io.github.moulberry.rpg\WorldManager.java|2988|3011|dynamicWorldRefFromName|method|io.github.moulberry.rpg.WorldManager|dynamicWorldRefFromName|(Ljava/lang/String;)Lio/github/moulberry/rpg/WorldManager$DynamicWorldRef;
+      @|io.github.moulberry.rpg\WorldManager.java|2972|2987|DynamicWorldRef|class|io.github.moulberry.rpg.WorldManager.DynamicWorldRef
+      @|io.github.moulberry.rpg\WorldManager.java|3012|3018|String|class|java.lang.String
+      @|io.github.moulberry.rpg\WorldManager.java|3019|3023|name|param|io.github.moulberry.rpg.WorldManager|dynamicWorldRefFromName|(Ljava/lang/String;)Lio/github/moulberry/rpg/WorldManager$DynamicWorldRef;|name|0
+      @|io.github.moulberry.rpg\WorldManager.java|3035|3041|String|class|java.lang.String
+      @|io.github.moulberry.rpg\WorldManager.java|3052|3056|name|param|io.github.moulberry.rpg.WorldManager|dynamicWorldRefFromName|(Ljava/lang/String;)Lio/github/moulberry/rpg/WorldManager$DynamicWorldRef;|name|0
+      @|io.github.moulberry.rpg\WorldManager.java|3057|3062|split|method|java.lang.String|split|(Ljava/lang/String;)[Ljava/lang/String;
+      Field: Array Length, skipping
+      @|io.github.moulberry.rpg\WorldManager.java|3126|3132|equals|method|java.lang.String|equals|(Ljava/lang/Object;)Z
+      @|io.github.moulberry.rpg\WorldManager.java|3167|3173|String|class|java.lang.String
+      @|io.github.moulberry.rpg\WorldManager.java|3215|3219|UUID|class|java.util.UUID
+      ERROR SimpleName: Util null
+      ERROR SimpleName: UUIDfromString null
+      @|io.github.moulberry.rpg\WorldManager.java|3296|3300|Long|class|java.lang.Long
+      @|io.github.moulberry.rpg\WorldManager.java|3301|3310|parseLong|method|java.lang.Long|parseLong|(Ljava/lang/String;)J
+      @|io.github.moulberry.rpg\WorldManager.java|3350|3365|DynamicWorldRef|class|io.github.moulberry.rpg.WorldManager.DynamicWorldRef
+   Method End: dynamicWorldRefFromName(Ljava/lang/String;)Lio/github/moulberry/rpg/WorldManager$DynamicWorldRef;
+   Class Start: io.github.moulberry.rpg.WorldManager.DynamicWorldRef
+      @|io.github.moulberry.rpg\WorldManager.java|3513|3519|String|class|java.lang.String
+      @|io.github.moulberry.rpg\WorldManager.java|3520|3532|templateName|field|io.github.moulberry.rpg.WorldManager.DynamicWorldRef|templateName|
+      @|io.github.moulberry.rpg\WorldManager.java|3549|3553|UUID|class|java.util.UUID
+      @|io.github.moulberry.rpg\WorldManager.java|3554|3560|player|field|io.github.moulberry.rpg.WorldManager.DynamicWorldRef|player|
+      @|io.github.moulberry.rpg\WorldManager.java|3582|3594|creationTime|field|io.github.moulberry.rpg.WorldManager.DynamicWorldRef|creationTime|
+      Method Start: DynamicWorldRef(Ljava/lang/String;Ljava/util/UUID;J)V
+         @|io.github.moulberry.rpg\WorldManager.java|3612|3627|DynamicWorldRef|method|io.github.moulberry.rpg.WorldManager.DynamicWorldRef|DynamicWorldRef|(Ljava/lang/String;Ljava/util/UUID;J)V
+         @|io.github.moulberry.rpg\WorldManager.java|3628|3634|String|class|java.lang.String
+         @|io.github.moulberry.rpg\WorldManager.java|3635|3647|templateName|param|io.github.moulberry.rpg.WorldManager.DynamicWorldRef|DynamicWorldRef|(Ljava/lang/String;Ljava/util/UUID;J)V|templateName|0
+         @|io.github.moulberry.rpg\WorldManager.java|3649|3653|UUID|class|java.util.UUID
+         @|io.github.moulberry.rpg\WorldManager.java|3654|3660|player|param|io.github.moulberry.rpg.WorldManager.DynamicWorldRef|DynamicWorldRef|(Ljava/lang/String;Ljava/util/UUID;J)V|player|1
+         @|io.github.moulberry.rpg\WorldManager.java|3667|3679|creationTime|param|io.github.moulberry.rpg.WorldManager.DynamicWorldRef|DynamicWorldRef|(Ljava/lang/String;Ljava/util/UUID;J)V|creationTime|2
+         @|io.github.moulberry.rpg\WorldManager.java|3700|3712|templateName|field|io.github.moulberry.rpg.WorldManager.DynamicWorldRef|templateName
+         @|io.github.moulberry.rpg\WorldManager.java|3715|3727|templateName|param|io.github.moulberry.rpg.WorldManager.DynamicWorldRef|DynamicWorldRef|(Ljava/lang/String;Ljava/util/UUID;J)V|templateName|0
+         @|io.github.moulberry.rpg\WorldManager.java|3746|3752|player|field|io.github.moulberry.rpg.WorldManager.DynamicWorldRef|player
+         @|io.github.moulberry.rpg\WorldManager.java|3755|3761|player|param|io.github.moulberry.rpg.WorldManager.DynamicWorldRef|DynamicWorldRef|(Ljava/lang/String;Ljava/util/UUID;J)V|player|1
+         @|io.github.moulberry.rpg\WorldManager.java|3780|3792|creationTime|field|io.github.moulberry.rpg.WorldManager.DynamicWorldRef|creationTime
+         @|io.github.moulberry.rpg\WorldManager.java|3795|3807|creationTime|param|io.github.moulberry.rpg.WorldManager.DynamicWorldRef|DynamicWorldRef|(Ljava/lang/String;Ljava/util/UUID;J)V|creationTime|2
+      Method End: DynamicWorldRef(Ljava/lang/String;Ljava/util/UUID;J)V
+      Method Start: toString()Ljava/lang/String;
+         @|io.github.moulberry.rpg\WorldManager.java|3842|3850|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+         @|io.github.moulberry.rpg\WorldManager.java|3835|3841|String|class|java.lang.String
+         @|io.github.moulberry.rpg\WorldManager.java|3895|3907|templateName|field|io.github.moulberry.rpg.WorldManager.DynamicWorldRef|templateName
+         @|io.github.moulberry.rpg\WorldManager.java|3933|3939|player|field|io.github.moulberry.rpg.WorldManager.DynamicWorldRef|player
+         @|io.github.moulberry.rpg\WorldManager.java|3940|3948|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+         @|io.github.moulberry.rpg\WorldManager.java|3951|3961|replaceAll|method|java.lang.String|replaceAll|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+         @|io.github.moulberry.rpg\WorldManager.java|3974|3986|creationTime|field|io.github.moulberry.rpg.WorldManager.DynamicWorldRef|creationTime
+      Method End: toString()Ljava/lang/String;
+      Method Start: toName()Ljava/lang/String;
+         @|io.github.moulberry.rpg\WorldManager.java|4025|4031|toName|method|io.github.moulberry.rpg.WorldManager.DynamicWorldRef|toName|()Ljava/lang/String;
+         @|io.github.moulberry.rpg\WorldManager.java|4018|4024|String|class|java.lang.String
+         @|io.github.moulberry.rpg\WorldManager.java|4070|4082|templateName|field|io.github.moulberry.rpg.WorldManager.DynamicWorldRef|templateName
+         @|io.github.moulberry.rpg\WorldManager.java|4108|4114|player|field|io.github.moulberry.rpg.WorldManager.DynamicWorldRef|player
+         @|io.github.moulberry.rpg\WorldManager.java|4115|4123|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+         @|io.github.moulberry.rpg\WorldManager.java|4126|4136|replaceAll|method|java.lang.String|replaceAll|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+         @|io.github.moulberry.rpg\WorldManager.java|4149|4161|creationTime|field|io.github.moulberry.rpg.WorldManager.DynamicWorldRef|creationTime
+      Method End: toName()Ljava/lang/String;
+      Method Start: getWorldFolder()Ljava/lang/String;
+         @|io.github.moulberry.rpg\WorldManager.java|4198|4212|getWorldFolder|method|io.github.moulberry.rpg.WorldManager.DynamicWorldRef|getWorldFolder|()Ljava/lang/String;
+         @|io.github.moulberry.rpg\WorldManager.java|4191|4197|String|class|java.lang.String
+         @|io.github.moulberry.rpg\WorldManager.java|4254|4260|player|field|io.github.moulberry.rpg.WorldManager.DynamicWorldRef|player
+         @|io.github.moulberry.rpg\WorldManager.java|4261|4269|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+         @|io.github.moulberry.rpg\WorldManager.java|4276|4288|templateName|field|io.github.moulberry.rpg.WorldManager.DynamicWorldRef|templateName
+         @|io.github.moulberry.rpg\WorldManager.java|4293|4305|creationTime|field|io.github.moulberry.rpg.WorldManager.DynamicWorldRef|creationTime
+      Method End: getWorldFolder()Ljava/lang/String;
+   Class End  : io.github.moulberry.rpg.WorldManager.DynamicWorldRef
+Class End  : io.github.moulberry.rpg.WorldManager
+endProcessing io.github.moulberry.rpg\WorldManager.java
+
+processing io.github.moulberry.rpg\commands\CommandCreateEmptyWorld.java
+@|io.github.moulberry.rpg\commands\CommandCreateEmptyWorld.java|8|40|io.github.moulberry.rpg.commands|package|io.github.moulberry.rpg.commands|(file)
+Class Start: io.github.moulberry.rpg.commands.CommandCreateEmptyWorld
+   Method Start: onCommand(Lorg/bukkit/command/CommandSender;Lorg/bukkit/command/Command;Ljava/lang/String;[Ljava/lang/String;)Z
+      @|io.github.moulberry.rpg\commands\CommandCreateEmptyWorld.java|352|361|onCommand|method|org.bukkit.command.CommandExecutor|onCommand|(Lorg/bukkit/command/CommandSender;Lorg/bukkit/command/Command;Ljava/lang/String;[Ljava/lang/String;)Z
+      @|io.github.moulberry.rpg\commands\CommandCreateEmptyWorld.java|362|375|CommandSender|class|org.bukkit.command.CommandSender
+      @|io.github.moulberry.rpg\commands\CommandCreateEmptyWorld.java|376|382|sender|param|io.github.moulberry.rpg.commands.CommandCreateEmptyWorld|onCommand|(Lorg/bukkit/command/CommandSender;Lorg/bukkit/command/Command;Ljava/lang/String;[Ljava/lang/String;)Z|sender|0
+      @|io.github.moulberry.rpg\commands\CommandCreateEmptyWorld.java|384|391|Command|class|org.bukkit.command.Command
+      @|io.github.moulberry.rpg\commands\CommandCreateEmptyWorld.java|392|399|command|param|io.github.moulberry.rpg.commands.CommandCreateEmptyWorld|onCommand|(Lorg/bukkit/command/CommandSender;Lorg/bukkit/command/Command;Ljava/lang/String;[Ljava/lang/String;)Z|command|1
+      @|io.github.moulberry.rpg\commands\CommandCreateEmptyWorld.java|401|407|String|class|java.lang.String
+      @|io.github.moulberry.rpg\commands\CommandCreateEmptyWorld.java|408|413|label|param|io.github.moulberry.rpg.commands.CommandCreateEmptyWorld|onCommand|(Lorg/bukkit/command/CommandSender;Lorg/bukkit/command/Command;Ljava/lang/String;[Ljava/lang/String;)Z|label|2
+      @|io.github.moulberry.rpg\commands\CommandCreateEmptyWorld.java|415|421|String|class|java.lang.String
+      @|io.github.moulberry.rpg\commands\CommandCreateEmptyWorld.java|424|428|args|param|io.github.moulberry.rpg.commands.CommandCreateEmptyWorld|onCommand|(Lorg/bukkit/command/CommandSender;Lorg/bukkit/command/Command;Ljava/lang/String;[Ljava/lang/String;)Z|args|3
+      @|io.github.moulberry.rpg\commands\CommandCreateEmptyWorld.java|443|447|args|param|io.github.moulberry.rpg.commands.CommandCreateEmptyWorld|onCommand|(Lorg/bukkit/command/CommandSender;Lorg/bukkit/command/Command;Ljava/lang/String;[Ljava/lang/String;)Z|args|3
+      Field: Array Length, skipping
+      @|io.github.moulberry.rpg\commands\CommandCreateEmptyWorld.java|511|517|sender|param|io.github.moulberry.rpg.commands.CommandCreateEmptyWorld|onCommand|(Lorg/bukkit/command/CommandSender;Lorg/bukkit/command/Command;Ljava/lang/String;[Ljava/lang/String;)Z|sender|0
+      @|io.github.moulberry.rpg\commands\CommandCreateEmptyWorld.java|529|535|Player|class|org.bukkit.entity.Player
+      @|io.github.moulberry.rpg\commands\CommandCreateEmptyWorld.java|551|557|Player|class|org.bukkit.entity.Player
+      @|io.github.moulberry.rpg\commands\CommandCreateEmptyWorld.java|568|574|Player|class|org.bukkit.entity.Player
+      @|io.github.moulberry.rpg\commands\CommandCreateEmptyWorld.java|576|582|sender|param|io.github.moulberry.rpg.commands.CommandCreateEmptyWorld|onCommand|(Lorg/bukkit/command/CommandSender;Lorg/bukkit/command/Command;Ljava/lang/String;[Ljava/lang/String;)Z|sender|0
+      @|io.github.moulberry.rpg\commands\CommandCreateEmptyWorld.java|597|602|World|class|org.bukkit.World
+      ERROR SimpleName: WorldManager null
+      ERROR SimpleName: getInstance null
+      ERROR SimpleName: createEmptyWorld null
+      @|io.github.moulberry.rpg\commands\CommandCreateEmptyWorld.java|658|662|args|param|io.github.moulberry.rpg.commands.CommandCreateEmptyWorld|onCommand|(Lorg/bukkit/command/CommandSender;Lorg/bukkit/command/Command;Ljava/lang/String;[Ljava/lang/String;)Z|args|3
+      @|io.github.moulberry.rpg\commands\CommandCreateEmptyWorld.java|688|696|teleport|method|org.bukkit.entity.Entity|teleport|(Lorg/bukkit/Location;)Z
+      @|io.github.moulberry.rpg\commands\CommandCreateEmptyWorld.java|706|722|getSpawnLocation|method|org.bukkit.World|getSpawnLocation|()Lorg/bukkit/Location;
+   Method End: onCommand(Lorg/bukkit/command/CommandSender;Lorg/bukkit/command/Command;Ljava/lang/String;[Ljava/lang/String;)Z
+Class End  : io.github.moulberry.rpg.commands.CommandCreateEmptyWorld
+endProcessing io.github.moulberry.rpg\commands\CommandCreateEmptyWorld.java
+
+processing io.github.moulberry.rpg\commands\CommandGotoDynamicWorld.java
+@|io.github.moulberry.rpg\commands\CommandGotoDynamicWorld.java|8|40|io.github.moulberry.rpg.commands|package|io.github.moulberry.rpg.commands|(file)
+Class Start: io.github.moulberry.rpg.commands.CommandGotoDynamicWorld
+   Method Start: onCommand(Lorg/bukkit/command/CommandSender;Lorg/bukkit/command/Command;Ljava/lang/String;[Ljava/lang/String;)Z
+      @|io.github.moulberry.rpg\commands\CommandGotoDynamicWorld.java|399|408|onCommand|method|org.bukkit.command.CommandExecutor|onCommand|(Lorg/bukkit/command/CommandSender;Lorg/bukkit/command/Command;Ljava/lang/String;[Ljava/lang/String;)Z
+      @|io.github.moulberry.rpg\commands\CommandGotoDynamicWorld.java|409|422|CommandSender|class|org.bukkit.command.CommandSender
+      @|io.github.moulberry.rpg\commands\CommandGotoDynamicWorld.java|423|429|sender|param|io.github.moulberry.rpg.commands.CommandGotoDynamicWorld|onCommand|(Lorg/bukkit/command/CommandSender;Lorg/bukkit/command/Command;Ljava/lang/String;[Ljava/lang/String;)Z|sender|0
+      @|io.github.moulberry.rpg\commands\CommandGotoDynamicWorld.java|431|438|Command|class|org.bukkit.command.Command
+      @|io.github.moulberry.rpg\commands\CommandGotoDynamicWorld.java|439|446|command|param|io.github.moulberry.rpg.commands.CommandGotoDynamicWorld|onCommand|(Lorg/bukkit/command/CommandSender;Lorg/bukkit/command/Command;Ljava/lang/String;[Ljava/lang/String;)Z|command|1
+      @|io.github.moulberry.rpg\commands\CommandGotoDynamicWorld.java|448|454|String|class|java.lang.String
+      @|io.github.moulberry.rpg\commands\CommandGotoDynamicWorld.java|455|460|label|param|io.github.moulberry.rpg.commands.CommandGotoDynamicWorld|onCommand|(Lorg/bukkit/command/CommandSender;Lorg/bukkit/command/Command;Ljava/lang/String;[Ljava/lang/String;)Z|label|2
+      @|io.github.moulberry.rpg\commands\CommandGotoDynamicWorld.java|462|468|String|class|java.lang.String
+      @|io.github.moulberry.rpg\commands\CommandGotoDynamicWorld.java|471|475|args|param|io.github.moulberry.rpg.commands.CommandGotoDynamicWorld|onCommand|(Lorg/bukkit/command/CommandSender;Lorg/bukkit/command/Command;Ljava/lang/String;[Ljava/lang/String;)Z|args|3
+      @|io.github.moulberry.rpg\commands\CommandGotoDynamicWorld.java|490|494|args|param|io.github.moulberry.rpg.commands.CommandGotoDynamicWorld|onCommand|(Lorg/bukkit/command/CommandSender;Lorg/bukkit/command/Command;Ljava/lang/String;[Ljava/lang/String;)Z|args|3
+      Field: Array Length, skipping
+      @|io.github.moulberry.rpg\commands\CommandGotoDynamicWorld.java|576|582|sender|param|io.github.moulberry.rpg.commands.CommandGotoDynamicWorld|onCommand|(Lorg/bukkit/command/CommandSender;Lorg/bukkit/command/Command;Ljava/lang/String;[Ljava/lang/String;)Z|sender|0
+      @|io.github.moulberry.rpg\commands\CommandGotoDynamicWorld.java|594|600|Player|class|org.bukkit.entity.Player
+      @|io.github.moulberry.rpg\commands\CommandGotoDynamicWorld.java|620|626|Player|class|org.bukkit.entity.Player
+      @|io.github.moulberry.rpg\commands\CommandGotoDynamicWorld.java|637|643|Player|class|org.bukkit.entity.Player
+      @|io.github.moulberry.rpg\commands\CommandGotoDynamicWorld.java|645|651|sender|param|io.github.moulberry.rpg.commands.CommandGotoDynamicWorld|onCommand|(Lorg/bukkit/command/CommandSender;Lorg/bukkit/command/Command;Ljava/lang/String;[Ljava/lang/String;)Z|sender|0
+      @|io.github.moulberry.rpg\commands\CommandGotoDynamicWorld.java|669|673|UUID|class|java.util.UUID
+      @|io.github.moulberry.rpg\commands\CommandGotoDynamicWorld.java|694|705|getUniqueId|method|org.bukkit.entity.AnimalTamer|getUniqueId|()Ljava/util/UUID;
+      @|io.github.moulberry.rpg\commands\CommandGotoDynamicWorld.java|726|732|String|class|java.lang.String
+      @|io.github.moulberry.rpg\commands\CommandGotoDynamicWorld.java|745|749|args|param|io.github.moulberry.rpg.commands.CommandGotoDynamicWorld|onCommand|(Lorg/bukkit/command/CommandSender;Lorg/bukkit/command/Command;Ljava/lang/String;[Ljava/lang/String;)Z|args|3
+      @|io.github.moulberry.rpg\commands\CommandGotoDynamicWorld.java|771|775|List|class|java.util.List
+      @|io.github.moulberry.rpg\commands\CommandGotoDynamicWorld.java|776|804|WorldManager.DynamicWorldRef|class|WorldManager
+      ERROR SimpleName: WorldManager null
+      ERROR SimpleName: getInstance null
+      ERROR SimpleName: getDynamicWorlds null
+      @|io.github.moulberry.rpg\commands\CommandGotoDynamicWorld.java|897|925|WorldManager.DynamicWorldRef|class|WorldManager
+      ERROR SimpleName: isEmpty null
+      @|io.github.moulberry.rpg\commands\CommandGotoDynamicWorld.java|999|1027|WorldManager.DynamicWorldRef|class|WorldManager
+      @|io.github.moulberry.rpg\commands\CommandGotoDynamicWorld.java|1051|1057|System|class|java.lang.System
+      @|io.github.moulberry.rpg\commands\CommandGotoDynamicWorld.java|1058|1075|currentTimeMillis|method|java.lang.System|currentTimeMillis|()J
+      ERROR SimpleName: WorldManager null
+      ERROR SimpleName: getInstance null
+      ERROR SimpleName: copyDynamicWorld null
+      ERROR SimpleName: get null
+      @|io.github.moulberry.rpg\commands\CommandGotoDynamicWorld.java|1249|1254|World|class|org.bukkit.World
+      ERROR SimpleName: WorldManager null
+      ERROR SimpleName: getInstance null
+      ERROR SimpleName: createInstanceWorldFromDynamic null
+      @|io.github.moulberry.rpg\commands\CommandGotoDynamicWorld.java|1354|1362|teleport|method|org.bukkit.entity.Entity|teleport|(Lorg/bukkit/Location;)Z
+      @|io.github.moulberry.rpg\commands\CommandGotoDynamicWorld.java|1372|1388|getSpawnLocation|method|org.bukkit.World|getSpawnLocation|()Lorg/bukkit/Location;
+      @|io.github.moulberry.rpg\commands\CommandGotoDynamicWorld.java|1453|1462|Exception|class|java.lang.Exception
+      @|io.github.moulberry.rpg\commands\CommandGotoDynamicWorld.java|1482|1497|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+   Method End: onCommand(Lorg/bukkit/command/CommandSender;Lorg/bukkit/command/Command;Ljava/lang/String;[Ljava/lang/String;)Z
+Class End  : io.github.moulberry.rpg.commands.CommandGotoDynamicWorld
+endProcessing io.github.moulberry.rpg\commands\CommandGotoDynamicWorld.java
+
+processing io.github.moulberry.rpg\commands\CommandGotoInstanceWorld.java
+@|io.github.moulberry.rpg\commands\CommandGotoInstanceWorld.java|8|40|io.github.moulberry.rpg.commands|package|io.github.moulberry.rpg.commands|(file)
+Class Start: io.github.moulberry.rpg.commands.CommandGotoInstanceWorld
+   Method Start: onCommand(Lorg/bukkit/command/CommandSender;Lorg/bukkit/command/Command;Ljava/lang/String;[Ljava/lang/String;)Z
+      @|io.github.moulberry.rpg\commands\CommandGotoInstanceWorld.java|353|362|onCommand|method|org.bukkit.command.CommandExecutor|onCommand|(Lorg/bukkit/command/CommandSender;Lorg/bukkit/command/Command;Ljava/lang/String;[Ljava/lang/String;)Z
+      @|io.github.moulberry.rpg\commands\CommandGotoInstanceWorld.java|363|376|CommandSender|class|org.bukkit.command.CommandSender
+      @|io.github.moulberry.rpg\commands\CommandGotoInstanceWorld.java|377|383|sender|param|io.github.moulberry.rpg.commands.CommandGotoInstanceWorld|onCommand|(Lorg/bukkit/command/CommandSender;Lorg/bukkit/command/Command;Ljava/lang/String;[Ljava/lang/String;)Z|sender|0
+      @|io.github.moulberry.rpg\commands\CommandGotoInstanceWorld.java|385|392|Command|class|org.bukkit.command.Command
+      @|io.github.moulberry.rpg\commands\CommandGotoInstanceWorld.java|393|400|command|param|io.github.moulberry.rpg.commands.CommandGotoInstanceWorld|onCommand|(Lorg/bukkit/command/CommandSender;Lorg/bukkit/command/Command;Ljava/lang/String;[Ljava/lang/String;)Z|command|1
+      @|io.github.moulberry.rpg\commands\CommandGotoInstanceWorld.java|402|408|String|class|java.lang.String
+      @|io.github.moulberry.rpg\commands\CommandGotoInstanceWorld.java|409|414|label|param|io.github.moulberry.rpg.commands.CommandGotoInstanceWorld|onCommand|(Lorg/bukkit/command/CommandSender;Lorg/bukkit/command/Command;Ljava/lang/String;[Ljava/lang/String;)Z|label|2
+      @|io.github.moulberry.rpg\commands\CommandGotoInstanceWorld.java|416|422|String|class|java.lang.String
+      @|io.github.moulberry.rpg\commands\CommandGotoInstanceWorld.java|425|429|args|param|io.github.moulberry.rpg.commands.CommandGotoInstanceWorld|onCommand|(Lorg/bukkit/command/CommandSender;Lorg/bukkit/command/Command;Ljava/lang/String;[Ljava/lang/String;)Z|args|3
+      @|io.github.moulberry.rpg\commands\CommandGotoInstanceWorld.java|444|448|args|param|io.github.moulberry.rpg.commands.CommandGotoInstanceWorld|onCommand|(Lorg/bukkit/command/CommandSender;Lorg/bukkit/command/Command;Ljava/lang/String;[Ljava/lang/String;)Z|args|3
+      Field: Array Length, skipping
+      @|io.github.moulberry.rpg\commands\CommandGotoInstanceWorld.java|530|536|sender|param|io.github.moulberry.rpg.commands.CommandGotoInstanceWorld|onCommand|(Lorg/bukkit/command/CommandSender;Lorg/bukkit/command/Command;Ljava/lang/String;[Ljava/lang/String;)Z|sender|0
+      @|io.github.moulberry.rpg\commands\CommandGotoInstanceWorld.java|548|554|Player|class|org.bukkit.entity.Player
+      @|io.github.moulberry.rpg\commands\CommandGotoInstanceWorld.java|574|580|Player|class|org.bukkit.entity.Player
+      @|io.github.moulberry.rpg\commands\CommandGotoInstanceWorld.java|591|597|Player|class|org.bukkit.entity.Player
+      @|io.github.moulberry.rpg\commands\CommandGotoInstanceWorld.java|599|605|sender|param|io.github.moulberry.rpg.commands.CommandGotoInstanceWorld|onCommand|(Lorg/bukkit/command/CommandSender;Lorg/bukkit/command/Command;Ljava/lang/String;[Ljava/lang/String;)Z|sender|0
+      @|io.github.moulberry.rpg\commands\CommandGotoInstanceWorld.java|624|629|World|class|org.bukkit.World
+      ERROR SimpleName: WorldManager null
+      ERROR SimpleName: getInstance null
+      ERROR SimpleName: createInstanceWorldFromTemplate null
+      @|io.github.moulberry.rpg\commands\CommandGotoInstanceWorld.java|700|704|args|param|io.github.moulberry.rpg.commands.CommandGotoInstanceWorld|onCommand|(Lorg/bukkit/command/CommandSender;Lorg/bukkit/command/Command;Ljava/lang/String;[Ljava/lang/String;)Z|args|3
+      @|io.github.moulberry.rpg\commands\CommandGotoInstanceWorld.java|734|742|teleport|method|org.bukkit.entity.Entity|teleport|(Lorg/bukkit/Location;)Z
+      @|io.github.moulberry.rpg\commands\CommandGotoInstanceWorld.java|752|768|getSpawnLocation|method|org.bukkit.World|getSpawnLocation|()Lorg/bukkit/Location;
+      @|io.github.moulberry.rpg\commands\CommandGotoInstanceWorld.java|833|842|Exception|class|java.lang.Exception
+      @|io.github.moulberry.rpg\commands\CommandGotoInstanceWorld.java|862|877|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+   Method End: onCommand(Lorg/bukkit/command/CommandSender;Lorg/bukkit/command/Command;Ljava/lang/String;[Ljava/lang/String;)Z
+Class End  : io.github.moulberry.rpg.commands.CommandGotoInstanceWorld
+endProcessing io.github.moulberry.rpg\commands\CommandGotoInstanceWorld.java
+
+processing io.github.moulberry.rpg\mixins\MixinMinecraftServer.java
+@|io.github.moulberry.rpg\mixins\MixinMinecraftServer.java|8|38|io.github.moulberry.rpg.mixins|package|io.github.moulberry.rpg.mixins|(file)
+Class Start: io.github.moulberry.rpg.mixins.MixinMinecraftServer
+   Method Start: onRun()V
+      @|io.github.moulberry.rpg\mixins\MixinMinecraftServer.java|406|411|onRun|method|io.github.moulberry.rpg.mixins.MixinMinecraftServer|onRun|()V
+      @|io.github.moulberry.rpg\mixins\MixinMinecraftServer.java|424|430|System|class|java.lang.System
+      @|io.github.moulberry.rpg\mixins\MixinMinecraftServer.java|431|434|out|field|java.lang.System|out
+      @|io.github.moulberry.rpg\mixins\MixinMinecraftServer.java|435|442|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|io.github.moulberry.rpg\mixins\MixinMinecraftServer.java|469|475|System|class|java.lang.System
+      @|io.github.moulberry.rpg\mixins\MixinMinecraftServer.java|476|479|out|field|java.lang.System|out
+      @|io.github.moulberry.rpg\mixins\MixinMinecraftServer.java|480|487|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|io.github.moulberry.rpg\mixins\MixinMinecraftServer.java|514|520|System|class|java.lang.System
+      @|io.github.moulberry.rpg\mixins\MixinMinecraftServer.java|521|524|out|field|java.lang.System|out
+      @|io.github.moulberry.rpg\mixins\MixinMinecraftServer.java|525|532|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+      @|io.github.moulberry.rpg\mixins\MixinMinecraftServer.java|559|565|System|class|java.lang.System
+      @|io.github.moulberry.rpg\mixins\MixinMinecraftServer.java|566|569|out|field|java.lang.System|out
+      @|io.github.moulberry.rpg\mixins\MixinMinecraftServer.java|570|577|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+   Method End: onRun()V
+Class End  : io.github.moulberry.rpg.mixins.MixinMinecraftServer
+endProcessing io.github.moulberry.rpg\mixins\MixinMinecraftServer.java
+

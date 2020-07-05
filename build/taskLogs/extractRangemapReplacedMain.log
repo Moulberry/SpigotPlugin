@@ -1,0 +1,10 @@
+Symbol range map extraction starting
+Processing 8 files
+processing io.github.moulberry.rpg\EventListener.java
+processing io.github.moulberry.rpg\Main.java
+processing io.github.moulberry.rpg\Util.java
+processing io.github.moulberry.rpg\WorldManager.java
+processing io.github.moulberry.rpg\commands\CommandCreateEmptyWorld.java
+processing io.github.moulberry.rpg\commands\CommandGotoDynamicWorld.java
+processing io.github.moulberry.rpg\commands\CommandGotoInstanceWorld.java
+processing io.github.moulberry.rpg\mixins\MixinMinecraftServer.java

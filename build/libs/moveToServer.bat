@@ -1,0 +1,1 @@
+move *.jar "C:\Users\James\Desktop\Modding\Spigot Server\plugins\"
